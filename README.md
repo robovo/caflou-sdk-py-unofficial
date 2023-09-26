@@ -39,20 +39,33 @@ The POST and PATCH methods take a Python dict as payload. Formatting the dict is
 
 
 ##Todo
+
 In no particular order.
 
 [ ] Create a installable pip package
+
 [ ] Copy the whole object model to classes and allow for dot notation usage
+
 [ ] Support async
+
 [ ] Swith to httpx client
+
 [ ] Better network exception handling
+
 [ ] Setup HTTP session on init
+
 [ ] Add unit testing
+
 [ ] Support fetching variables from .env files
+
 [ ] Add typing
+
 [ ] Add proper logging
+
 [ ] Add support for downloading all objects of type
+
 [ ] Add local caching of data for batch manipulation
+
 [ ] Generate docs from code
 
 ----

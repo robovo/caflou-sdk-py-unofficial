@@ -20,18 +20,21 @@ The POST and PATCH methods take a Python dict as payload. Formatting the dict is
 
 1. Download a copy of the source code to your project folder.
 2. import the caflou class
-    ```python
-    from caflou.caflou.caflou import Caflou # Sorry about that, hopefully it will change to a single  caflou soon
-    ```
+  ```python
+  from caflou.caflou.caflou import Caflou # Sorry about that, hopefully it will change to a single  caflou soon
+  ```
 3. Get the credentials. Your credentials can be found in the Caflou app: Cog wheel > Account Settings > API  (URL ending in /settings/integration)
-4. Initiate the Caflou object `c = Caflou(accound_id, token)`
+4. Initiate the Caflou object 
+  ```python
+  caflou = Caflou(accound_id, token)
+  ```
 5. Call the available methods to read/write data.
-    ```python
-    invoice = caflou.get("invoices/123")
-    projects = caflou.get("projects", per=1000)
-    item_response = caflou.post("products",{"name": "Test product"})
-    del_response = caflou.delete(f"products/{item_response["id"]}")
-    ```
+  ```python
+  invoice = caflou.get("invoices/123")
+  projects = caflou.get("projects", per=1000)
+  item_response = caflou.post("products",{"name": "Test product"})
+  del_response = caflou.delete(f"products/{item_response["id"]}")
+  ```
 6. Process the data I guess.
 
 
